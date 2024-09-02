@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #00203a;
+  padding: 0px 150px;
+}
+
+.container {
+  width: 600px;
+  max-width: 100%;
+}
+
+.container h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.container h1 span {
+  color: #048856;
+  position: relative;
+}
+
+.container h1 span::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 0.4rem;
+  background-color: #048856;
+  bottom: -1rem;
+  border-radius: 1rem;
+}
+
+.container .content {
+  display: flex;
+  align-items: center;
+}
+
+.content .input-box {
+  position: relative;
+  flex-grow: 1;
+}
+
+.input-box i {
+  position: absolute;
+  z-index: 100;
+  color: #048856;
+  font-size: 1.4rem;
+  font-weight: bold;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.content input {
+  width: 100%;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 3rem 0.7rem 0.7rem;
+}
+
+.content select {
+  width: 4rem;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+}
+
+.content + button {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  background-color: #048856;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0px 20px;
+  }
+
+  .container h1 {
+    font-size: 2.5rem;
+  }
+}
